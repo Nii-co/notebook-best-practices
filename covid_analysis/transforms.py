@@ -16,7 +16,7 @@ def pivot_and_clean(pdf, fillna):
     return pdf
 
 
-# Create column names that are compatible with Delta tables.
+# Create column names that are compatible with Delta tables. tt
 def clean_spark_cols(pdf):
     pdf.columns = pdf.columns.str.replace(" ", "_")
     return pdf
